@@ -1,0 +1,36 @@
+spring:
+  profiles:
+    active: @activatedProperties@
+  http:
+      multipart:
+          maxFileSize: 64Mb
+          maxRequestSize: 128Mb
+
+
+mybatis:
+     mapperLocations: classpath*:mybatis/**/*.xml
+     typeAliasesPackage: com.netease.auto.domain
+     mapperScanPackage: com.netease.auto.mapper
+     configLocation: classpath:mybatis_config.xml
+
+thread:
+    pool:
+          corePoolSize: 20
+          maxPoolSize: 50
+          keepAliveSeconds: 300
+
+
+nos:
+    accessKey: 56895053996a40db876c6ba5a5e1a09b
+    accessSecret: eee357caec3d4df980815580cee510f2
+    nosHost: auto.nos.netease.com
+    cdnHost: auto.nosdn.127.net
+    bucketName: auto
+
+project:
+    dir:
+        root: @dir.home.root@
+        htmlRoot: @dir.home.root@/htmlfile
+        tmpRoot: @dir.home.root@/tmpdir
+
+

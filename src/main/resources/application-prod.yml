@@ -1,0 +1,27 @@
+
+spring:
+    datasource:
+        name: db
+        type: com.alibaba.druid.pool.DruidDataSource
+        url:
+            master:
+            slave:
+        username:
+        password:
+        driver-class-name:
+        minIdle: 20
+        maxActive: 200
+        initialSize: 10
+        maxWait: 60000
+        timeBetweenEvictionRunsMillis: 60000
+        minEvictableIdleTimeMillis: 300000
+        validationQuery: select 1 from dual
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+        poolPreparedStatements: true
+        maxPoolPreparedStatementPerConnectionSize: 50
+        removeAbandoned: true
+        filters: stat
+        druidLoginName: druid
+        druidPassword: druid
