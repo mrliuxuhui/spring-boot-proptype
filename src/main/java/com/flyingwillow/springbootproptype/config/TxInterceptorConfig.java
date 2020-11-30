@@ -16,7 +16,7 @@ import java.util.Properties;
 @AutoConfigureAfter(MybatisConfiguration.class)
 public class TxInterceptorConfig {
 
-    private static final String AOP_POINTCUT_EXPRESSION = "execution (* com.netease.auto..service.*.*(..))";
+    private static final String AOP_POINTCUT_EXPRESSION = "execution (* com.flyingwillow.springbootproptype..service.*.*(..))";
     @Autowired
     private PlatformTransactionManager transactionManager;
 

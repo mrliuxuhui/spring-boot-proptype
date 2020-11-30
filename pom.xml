@@ -202,9 +202,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <!--<configuration>
-                    <mainClass>com.netease.auto.commonapi.CommonApiApplication</mainClass>
-                </configuration>-->
             </plugin>
         </plugins>
 	</build>
